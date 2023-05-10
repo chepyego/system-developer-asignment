@@ -5,7 +5,7 @@ function Users() {
     const [data, setData] = useState([])
 
     useEffect(()=>{
-        fetch('https://wise-ledger-hosted.fly.dev/sales')
+        fetch('http://52.59.33.40/web/api/code')
         .then(response => response.json())
         .then (json => setData(json))
         .catch(error => console.log(error));
@@ -19,7 +19,8 @@ function Users() {
         
         {data.map((user) => 
           <div key={user.id}>
-             {user.date}
+             {user.firstName}
+             {user.lastName}
            </div>
         )}
 

@@ -9,11 +9,11 @@ function NewUser() {
     const handleRegister =(e) =>{
         e.preventDefault();
 
-        fetch('http://3.123.16.12/web/api/register',{
+        fetch('http://52.59.33.40/web/api/register',{
             method:'POST',
             headers:{
                 'Content-Type':'application/json',
-                'Authorization':'Bearer  2XNVmuH2YVhYvVGgh4YkV9m6ph4c8CxMMX6UzeeDh7LJTmgdLk4Fz38QLwFt3sSY6BHkCeK8B3Jhgt23Q4dX6A3pmFRMGnJejwDg'
+                'Authorization':'Bearer 2XNVmuH2YVhYvVGgh4YkV9m6ph4c8CxMMX6UzeeDh7LJTmgdLk4Fz38QLwFt3sSY6BHkCeK8B3Jhgt23Q4dX6A3pmFRMGnJejwDg'
             },
             body: JSON.stringify({
                 firstName: firstName,
